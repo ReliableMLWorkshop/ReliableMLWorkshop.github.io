@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Reliable ML from Unreliable Data — NeurIPS 2025 Workshop</title>
+
+  <!-- Bootstrap 4 -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Style tweaks -->
+  <style>
+    :root{
+      --cream:#FFFDF6;          /* slightly warm off‑white background */
+      --link:#0066cc;
+      --link-hover:#004b99;
+    }
+
+    html{ scroll-behavior:smooth; }
+    body{
+      background:var(--cream);
+      font-family:"Palatino Linotype","Book Antiqua",Palatino,"URW Palladio L","EB Garamond",serif;
+      color:#111;
+    }
+    a{ color:var(--link); }
+    a:hover{ color:var(--link-hover); text-decoration:none; }
+
+
+
+    /* body{
+      background:#FFFBEF;
+      font-family:"Palatino Linotype","Book Antiqua",Palatino,"URW Palladio L","Times New Roman",serif;
+    } */
+    strong{font-weight:600;}
+    .lead{font-size:1.05rem;}
+    .container{max-width:1000px;}
+
+    /* cards */
+    .card{background:none;border:none;}
+    .card-body{padding:0.5rem;text-align:center;}
+    .speaker-img,.organizer-img{width:100%;max-width:200px;height:200px;object-fit:cover;border-radius:50%;margin:0 auto;}
+    .speaker-name,.organizer-name{display:block;margin-top:0.4rem;font-weight:600;white-space:nowrap;}
+    .flex-row-wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;}
+    .flex-row-wrap .card{flex:1 1 200px;max-width:220px;}
+
+    html{scroll-behavior:smooth;}
+
+    /* Navbar matches the cream background */
+  .navbar {
+    background-color: rgb(255, 254, 249);
+    border-bottom: 1px solid #e4dcc7;   /* faint separator so it doesn’t “float” */
+  }
+
+  /* Keep text dark enough for contrast */
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #111;                   /* near-black for legibility */
+  }
+  .navbar .nav-link:hover {
+    color: #444;                   /* subtle hover effect */
+  }
+
+.clickable-image img {
+  display: block;
+  border: none;
+  transition: filter 0.25s ease; /* animate brightness change */
+}
+
+.clickable-image:hover img {
+  filter: brightness(1.2);       /* 20% brighter on hover */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Reliable ML 2025</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#call">Call for Papers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="text-center py-5" style="margin-top:70px;">
+    <div class="container">
+      <h1 class="display-4">Reliable ML from Unreliable Data</h1>
+      <h3><strong>Workshop @ NeurIPS 2025</strong></h3>
+      <br>
+      <!-- <p class="lead">The Thirty‑Ninth Annual Conference on Neural Information Processing Systems</p> -->
+      <p class="lead"><em>San Diego Convention Center</em></p>
+      <p class="lead">Sat Dec 6 or Sun Dec 7 2025 (final slot TBD)</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="py-5" id="about">
+    <div class="container">
+      <p class="lead text-center" style="max-width:700px;margin:0 auto;">
+        Distributions shift, chatbots get jail‑broken, users game algorithms — how do we build <strong>reliable machine learning</strong>
+        when data are missing, corrupted, or strategically manipulated? 
+    </p>
+    <br>
+    <p class="lead text-center" style="max-width:700px;margin:0 auto;">
+        This workshop bridges theory and practice to
+        tackle these challenges, bringing together researchers working on distribution shift, adversarial robustness,
+        and strategic behaviour to chart principled yet deployable solutions for <em>Reliable ML from Unreliable Data</em>.
+      </p>
+    </div>
+  </section>
+
+   <!-- CALL FOR PAPERS -->
+  <section class="py-5" id="call">
+    <div class="container lead">
+      <h2 class="text-center mb-4">Call for Papers</h2>
+      <p>We invite work that advances theory, empirical understanding, or systems design for <strong>robust and reliable machine
+         learning under imperfect data</strong> — including distribution shift, adversarial or strategic manipulation, and missing
+         or biased data. Submissions may report new results, negative findings, benchmarks, or visionary perspectives.</p>
+      <ul>
+        <li><strong>Long track:</strong> up to <strong>9 pages</strong> (excluding references).</li>
+        <li><strong>Short track:</strong> up to <strong>4 pages</strong> (excluding references).</li>
+        <li><strong>Formatting:</strong> use the official <a href="https://media.neurips.cc/Conferences/NeurIPS2025/Styles.zip">NeurIPS 2025 style files</a>
+            and submit a <u>single PDF</u>.</li>
+        <li><strong>Appendix:</strong> include any supplementary material in the same PDF — <em>no page limit</em> for the appendix.</li>
+      </ul>
+      <h3 class="mt-4">Important Dates</h3>
+      <ul>
+        <li><strong>Submission deadline:</strong> Fri Aug 22 2025 (AoE)</li>
+        <li><strong>Notification of decisions:</strong> Mon Sep 22 2025 (AoE)</li>
+        <li><strong>Workshop:</strong> Sat Dec 6 or Sun Dec 7 2025 (at NeurIPS 2025)</li>
+      </ul>
+      <p class="mb-0">Submit via <strong>OpenReview</strong> (<em>link coming soon</em>). The workshop is <strong>non‑archival</strong>; authors are free to publish
+         revised versions elsewhere. Every submission will receive at least two reviews from our program committee, and
+         accepted papers will be presented as talks or posters.</p>
+    </div>
+  </section>
+
+  <!-- SPEAKERS -->
+  <section class="py-5 bg-light" id="speakers">
+    <div class="container">
+      <h2 class="text-center mb-4">Invited Speakers</h2>
+      <div class="flex-row-wrap">
+        <div class="card speaker-card">
+	<a href="https://www.surbhigoel.com/" class="clickable-image">
+          <img src="./speakers/surbhi.jpg" alt="Surbhi Goel" class="speaker-img">
+</a>
+          <div class="card-body">
+            <span class="speaker-name">Surbhi Goel</span>
+            <small>University of Pennsylvania</small>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="card speaker-card">
+	<a href="https://stevehanneke.com/" class="clickable-image">
+          <img src="./speakers/steve.jpeg" alt="Steve Hanneke" class="speaker-img">
+</a>
+          <div class="card-body">
+            <span class="speaker-name">Steve Hanneke</span>
+            <small>Purdue University</small>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="card speaker-card">
+	<a href="https://www.chrisharshaw.com/" class="clickable-image">
+          <img src="./speakers/chris.jpg" alt="Chris Harshaw" class="speaker-img">
+</a>
+          <div class="card-body">
+            <span class="speaker-name">Chris Harshaw</span>
+            <small>Columbia University</small>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="card speaker-card">
+	<a href="https://iid.yale.edu/" class="clickable-image">
+          <img src="./speakers/amin.jpg" alt="Amin Karbasi" class="speaker-img">
+	</a>
+          <div class="card-body">
+            <span class="speaker-name">Amin Karbasi</span>
+            <small>Cisco &amp; Yale University</small>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="card speaker-card">
+	<a href="https://www.columbia.edu/~skk2175/" class="clickable-image">
+          <img src="./speakers/samory.webp" alt="Samory Kpotufe" class="speaker-img">
+</a>
+          <div class="card-body">
+            <span class="speaker-name">Samory Kpotufe</span>
+            <small>Columbia University</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANELISTS -->
+  <section class="py-5 bg-light" id="speakers">
+    <div class="container">
+      <h2 class="text-center mb-4">Invited Panelists (more to come!)</h2>
+      <div class="flex-row-wrap">
+        <div class="card speaker-card">
+	<a href="https://beirami.github.io/" class="clickable-image">
+          <img src="./panelists/ahmad.jpg" alt="Ahmad Beirami" class="speaker-img">
+</a>
+          <div class="card-body">
+            <span class="speaker-name">Ahmad Beirami</span>
+            <small>Ex-Google Deepmind, Meta, and EA</small>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="card speaker-card">
+	<a href="https://www.charapodimata.com/" class="clickable-image">
+          <img src="./panelists/chara.jpg" alt="Chara Podimata" class="speaker-img">
+</a>
+          <div class="card-body">
+            <span class="speaker-name">Chara Podimata</span>
+            <small>MIT</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORGANISERS -->
+  <section class="py-5" id="organizers">
+    <div class="container">
+      <h2 class="text-center mb-4">Organizers</h2>
+      <div class="flex-row-wrap">
+        <div class="card organizer-card">
+	<a href="https://andrewilyas.com/" class="clickable-image">
+          <img src="./organizers/andrew.jpg" alt="Andrew Ilyas" class="organizer-img">
+</a>
+          <div class="card-body">
+            <span class="organizer-name">Andrew Ilyas</span>
+            <small>Stanford / CMU</small>
+          </div>
+        </div>
+        <div class="card organizer-card">
+	<a href="https://alkisk.github.io/" class="clickable-image">
+          <img src="./organizers/alkis.png" alt="Alkis Kalavasis" class="organizer-img">
+</a>
+          <div class="card-body">
+            <span class="organizer-name">Alkis Kalavasis</span>
+            <small>Yale University</small>
+          </div>
+        </div>
+        <div class="card organizer-card">
+	<a href="https://anaymehrotra.com/" class="clickable-image">
+          <img src="./organizers/anay.jpg" alt="Anay Mehrotra" class="organizer-img">
+</a>
+          <div class="card-body">
+            <span class="organizer-name">Anay Mehrotra</span>
+            <small>Yale University</small>
+          </div>
+        </div>
+        <div class="card organizer-card">
+	<a href="https://mzampet.com/" class="clickable-image">
+          <img src="./organizers/manolis.png" alt="Manolis Zampetakis" class="organizer-img">
+</a>
+          <div class="card-body">
+            <span class="organizer-name">Manolis Zampetakis</span>
+            <small>Yale University</small>
+          </div>
+        </div>
+      </div><!-- /.flex-row-wrap -->
+    </div><!-- /.container -->
+  </section>
+
+  <!-- Optional: Add a footer or additional scripts here -->
+
+</body>
+</html>
