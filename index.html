@@ -73,6 +73,16 @@
   filter: brightness(1.2);       /* 20% brighter on hover */
 }
 
+	  del { color: #666; }        /* de-emphasize old date */
+  ins { color: #007700; }     /* emphasize new date (optional) */
+
+  /* sr-only utility for screen-reader-only text */
+  .sr-only {
+    position:absolute;
+    width:1px;height:1px;
+    padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0,0,0,0);white-space:nowrap;border:0;
+  }
 
   </style>
 </head>
@@ -151,7 +161,11 @@
       </ul>
       <h3 class="mt-4">Important Dates</h3>
       <ul>
-        <li><strong>Submission deadline:</strong> Fri Aug 29 2025 (AoE) <s>Fri Aug 22 2025 (AoE)</s></li>
+        <li><strong>Submission deadline:</strong> <ins datetime="2025-08-29"><time datetime="2025-08-29">Fri Aug 29 2025 (AoE)</time></ins>
+  <del datetime="2025-08-22">
+    <time datetime="2025-08-22">Fri Aug 22 2025 (AoE)</time>
+    <span class="sr-only"> — previous deadline</span>
+  </del>
         <li><strong>Notification of decisions:</strong> Mon Sep 22 2025 (AoE)</li>
         <li><strong>Workshop:</strong> Sat Dec 6 or Sun Dec 7 2025 (at NeurIPS 2025)</li>
       </ul>
