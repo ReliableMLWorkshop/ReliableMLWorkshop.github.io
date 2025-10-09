@@ -84,6 +84,66 @@
     clip:rect(0,0,0,0);white-space:nowrap;border:0;
   }
 
+
+  /* Reviewers/Program Committee styling */
+  .reviewers-section {
+    background: #f9f7f0;
+    border-top: 1px solid #e4dcc7;
+    padding: 3rem 0;
+  }
+  
+  .reviewers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .reviewers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .reviewer-name {
+    padding: 0.15rem;
+    background: white;
+    border: 1px solid #e4dcc7;
+    border-radius: 2px;
+    text-align: center; 
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+  }
+  
+  .reviewer-name:hover {
+    background: var(--cream);
+    border-color: #d4c4b0;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .reviewer-name a {
+    color: var(--link);
+    text-decoration: none;
+    display: block;
+  }
+  
+  .reviewer-name a:hover {
+    color: var(--link-hover);
+  }
+  
+  .reviewers-section h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .reviewers-section .subtitle {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+
   </style>
 </head>
 <body>
@@ -161,8 +221,9 @@
       </ul>
       <h3 class="mt-4">Important Dates</h3>
       <ul>
-        <li><strong>Submission deadline:</strong> <ins datetime="2025-08-29"><time datetime="2025-08-29">Fri Aug 29 2025 (AoE)</time></ins>
-  <del datetime="2025-08-22">
+        <li><strong>Submission deadline:</strong> <ins datetime="2025-08-29"><time datetime="2025-08-29"><strong>Fri Aug 29 2025 (AoE)</strong></time></ins>
+          &nbsp;&nbsp;&nbsp;
+          <del datetime="2025-08-22">
     <time datetime="2025-08-22">Fri Aug 22 2025 (AoE)</time>
     <span class="sr-only"> — previous deadline</span>
   </del>
@@ -314,12 +375,137 @@
           </div>
         </div>
       </div><!-- /.flex-row-wrap -->
-    </div><!-- /.container -->
+    </div><!-- /.container --> 
   </section>
+  <!-- PROGRAM COMMITTEE / REVIEWERS -->
+  <section class="reviewers-section" id="reviewers">
+    <div class="reviewers-container">
+      <h2>Program Committee</h2>
+      <p class="subtitle">We thank our reviewers for their valuable contributions</p>
+      <div class="reviewers-grid">
+        <div class="reviewer-name">Nivasini Ananthakrishnan</div>
+        <div class="reviewer-name">Joshua Wolff Anderson</div>
+        <div class="reviewer-name">Carmel Baharav</div>
+        <div class="reviewer-name">Kapilan Balagopalan</div>
+        <div class="reviewer-name">Mark Bedaywi</div>
+        <div class="reviewer-name"><a href="https://www.buzaglo.me">Gon Buzaglo</a></div>
+        <div class="reviewer-name">Chengdi Cao</div>
+        <div class="reviewer-name">Aunabil Chakma</div>
+        <div class="reviewer-name">Syomantak Chaudhuri</div>
+        <div class="reviewer-name">Weixin Chen</div>
+        <div class="reviewer-name"><a href="https://www.zerui-cheng.com/">Zerui Cheng</a></div>
+        <div class="reviewer-name">Keertana Chidambaram</div>
+        <div class="reviewer-name">Jessica Dai</div>
+        <div class="reviewer-name">Yan Dai</div>
+        <div class="reviewer-name">Mohammadreza Daneshvaramoli</div>
+        <div class="reviewer-name">Siddartha Devic</div>
+        <div class="reviewer-name">Qiwei Di</div>
+        <div class="reviewer-name">Spyros Dragazis</div>
+        <div class="reviewer-name">Valia Efthymiou</div>
+        <div class="reviewer-name">Adiba Ejaz</div>
+        <div class="reviewer-name">Enfa Fane</div>
+        <div class="reviewer-name"><a href="https://ek8terina.github.io/opossum_girlie/">Ekaterina Fedorova</a></div>
+        <div class="reviewer-name"><a href="https://geofila.github.io">Giorgos Filandrianos</a></div>
+        <div class="reviewer-name">Qiang Fu</div>
+        <div class="reviewer-name">Georgios Gkrinias</div>
+        <div class="reviewer-name">Sruthi Gorantla</div>
+        <div class="reviewer-name">Anxin Guo</div>
+        <div class="reviewer-name">Mingfei Guo</div>
+        <div class="reviewer-name">Xiaobo Guo</div>
+        <div class="reviewer-name">Zhicheng Guo</div>
+        <div class="reviewer-name">Sophia Simeng Han</div>
+        <div class="reviewer-name"><a href="https://caroheinz.github.io/">Carolin Heinzler</a></div>
+        <div class="reviewer-name"><a href="https://montehoover.github.io/">Monte Hoover</a></div>
+        <div class="reviewer-name"><a href="https://profile.junyi.dev/">Junyi Hou</a></div>
+        <div class="reviewer-name">Jennifer Hsia</div>
+        <div class="reviewer-name">Giannis Iakovidis</div>
+        <div class="reviewer-name">Hyewon Jeong</div>
+        <div class="reviewer-name"><a href="https://ujeong1.github.io/">Ujun Jeong</a></div>
+        <div class="reviewer-name">Vikram Kher</div>
+        <div class="reviewer-name">Alexandros Kouridakis</div>
+        <div class="reviewer-name">Jane H. Lee</div>
+        <div class="reviewer-name">Kelvin M. Leung</div>
+        <div class="reviewer-name">Jiaxun Li</div>
+        <div class="reviewer-name">Shuchen Li</div>
+        <div class="reviewer-name"><a href="https://www.linkedin.com/in/songyu-liu/">Songyu Liu</a></div>
+        <div class="reviewer-name">Vasilis Livanos</div>
+        <div class="reviewer-name">Kuan Lu</div>
+        <div class="reviewer-name">Mingchen Ma</div>
+        <div class="reviewer-name"><a href="https://scholar.google.com/citations?user=srv4TkIAAAAJ&amp;hl=en">Pingchuan Ma</a></div>
+        <div class="reviewer-name">Katerina Mamali</div>
+        <div class="reviewer-name">Marina Mancoridis</div>
+        <div class="reviewer-name">Argyris Mouzakis</div>
+        <div class="reviewer-name">Tamalika Mukherjee</div>
+        <div class="reviewer-name">Pranay Mundra</div>
+        <div class="reviewer-name">Anh Tuan Nguyen</div>
+        <div class="reviewer-name">Changdae Oh</div>
+        <div class="reviewer-name">Hillary Nana Yaa Owusu</div>
+        <div class="reviewer-name">Atasi Panda</div>
+        <div class="reviewer-name">Yorgos Pantis</div>
+        <div class="reviewer-name">Cassandra Parent</div>
+        <div class="reviewer-name">Seongheon Park</div>
+        <div class="reviewer-name">Yash Patel</div>
+        <div class="reviewer-name">Charilaos Pipis</div>
+        <div class="reviewer-name">Charalampos Platanos</div>
+        <div class="reviewer-name">Eleni Psaroudaki</div>
+        <div class="reviewer-name">Hao Qin</div>
+        <div class="reviewer-name">Shreyaa Raghavan</div>
+        <div class="reviewer-name">Herlock Rahimi</div>
+        <div class="reviewer-name">Vinod Raman</div>
+        <div class="reviewer-name">Kartik Ravisankar</div>
+        <div class="reviewer-name">Saeyoung Rho</div>
+        <div class="reviewer-name">Roy Rinberg</div>
+        <div class="reviewer-name">Baturay Saglam</div>
+        <div class="reviewer-name">Sourav Sahoo</div>
+        <div class="reviewer-name"><a href="https://donyasaless.github.io/">Donya Saless</a></div>
+        <div class="reviewer-name"><a href="https://www.linkedin.com/in/saiful-islam-salim/">Saiful Islam Salim</a></div>
+        <div class="reviewer-name">Sebastian Schmidt</div>
+        <div class="reviewer-name"><a href="https://willschwarzer.com">Will Schwarzer</a></div>
+        <div class="reviewer-name">Junyi Sha</div>
+        <div class="reviewer-name">Deep Shah</div>
+        <div class="reviewer-name">Parnian Shahkar</div>
+        <div class="reviewer-name">Mohit Sharma</div>
+        <div class="reviewer-name"><a href="https://csheehan10.github.io">Conor Sheehan</a></div>
+        <div class="reviewer-name">Yunyi Shen</div>
+        <div class="reviewer-name">Flora C. Shi</div>
+        <div class="reviewer-name">Prabhav Singh</div>
+        <div class="reviewer-name">Neha Sontakke</div>
+        <div class="reviewer-name">Vaidehi Srinivas</div>
+        <div class="reviewer-name">Vishwak Srinivasan</div>
+        <div class="reviewer-name">Kevin Stangl</div>
+        <div class="reviewer-name">Konstantinos Stavropoulos</div>
+        <div class="reviewer-name">Miltiadis Stouras</div>
+        <div class="reviewer-name">Anzo Teh</div>
+        <div class="reviewer-name">Thanos Tolias</div>
+        <div class="reviewer-name">Toan Tran</div>
+        <div class="reviewer-name">Thodoris Tsilivis</div>
+        <div class="reviewer-name">Panagiotis Tsimpos</div>
+        <div class="reviewer-name">Konstantinos Tsirkas</div>
+        <div class="reviewer-name">Annie S Ulichney</div>
+        <div class="reviewer-name">Lukas Vogl</div>
+        <div class="reviewer-name">Shu Wan</div>
+        <div class="reviewer-name">Erchi Wang</div>
+        <div class="reviewer-name">Xiuyuan Wang</div>
+        <div class="reviewer-name">Yufeng Wu</div>
+        <div class="reviewer-name">Eric Xia</div>
+        <div class="reviewer-name">Chulin Xie</div>
+        <div class="reviewer-name">Jianzhu Yao</div>
+        <div class="reviewer-name">Aditya Sirish A Yelgundhalli</div>
+        <div class="reviewer-name">Xifan Yu</div>
+        <div class="reviewer-name">Jack Zhang</div>
+        <div class="reviewer-name">Rui Zhang</div>
+        <div class="reviewer-name">Weiqiang Zheng</div>
+        <div class="reviewer-name">Felix Zhou</div>
+        <div class="reviewer-name">Yifan Zhu</div>
+      </div>
+    </div>
+  </section>
+
+
  
    <center>
     <p>
-    <em>Last updated September 22, 2025 by Anay Mehrotra</em>
+    <em>Last updated October 9, 2025 by Anay Mehrotra</em>
    </p>
    </center>
 </body>
