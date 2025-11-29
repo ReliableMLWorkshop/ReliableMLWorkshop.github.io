@@ -5,16 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Reliable ML from Unreliable Data — NeurIPS 2025 Workshop</title>
+  <title>Reliable ML from Unreliable Data — NeurIPS 2025 Workshop</title>
 
   <!-- Bootstrap 4 -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+ <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
   <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
   <!-- Style tweaks -->
   <style>
     :root{
-      --cream:#FFFDF6;          /* slightly warm off‑white background */
+      --cream:#FFFDF6;          /* slightly warm off-white background */
       --link:#0066cc;
       --link-hover:#004b99;
     }
@@ -150,15 +154,15 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Reliable ML 2025</a>
+      <a class="navbar-brand" href="#">Reliable ML 2025</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#call">Call for Papers</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#call">Call for Papers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
           <li class="nav-item"><a class="nav-link" href="#speakers">Speakers and Panelists</a></li>
           <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
         </ul>
@@ -169,23 +173,30 @@
   <!-- HERO -->
   <section class="text-center py-5" style="margin-top:70px;">
     <div class="container">
-      <h1 class="display-4">Reliable ML from Unreliable Data</h1>
-      <h3><strong>Workshop @ NeurIPS 2025</strong></h3>
+      <h1 class="display-4">Reliable ML from Unreliable Data</h1>
+      <h3><strong>Workshop @ NeurIPS 2025</strong></h3>
       <br>
-      <!-- <p class="lead">The Thirty‑Ninth Annual Conference on Neural Information Processing Systems</p> -->
-      <p class="lead"><em>San Diego Convention Center</em> &nbsp;&nbsp;|&nbsp;&nbsp;Dec 6, 2025</p>
+      <!-- <p class="lead">The Thirty-Ninth Annual Conference on Neural Information Processing Systems</p> -->
+      <p class="lead"><em>Upper Level Room 2, San Diego Convention Center</em> &nbsp;&nbsp;|&nbsp;&nbsp;Dec 6, 2025</p>
+      <p class="mt-2">
+        <strong>Official NeurIPS Workshop Page:</strong>
+        <a href="https://neurips.cc/virtual/2025/loc/san-diego/workshop/109580">
+          neurips.cc/virtual/2025/loc/san-diego/workshop/109580
+        </a>
+      </p>
+<br>
     </div>
     <br>
     <div class="container">
       <p class="lead text-center" style="max-width:700px;margin:0 auto;">
-        Distributions shift, chatbots get jail‑broken, users game algorithms — how do we build <strong>reliable machine learning</strong>
+        Distributions shift, chatbots get jail-broken, users game algorithms — how do we build <strong>reliable machine learning</strong>
         when data are missing, corrupted, or strategically manipulated? 
     </p>
     <br>
     <p class="lead text-center" style="max-width:700px;margin:0 auto;">
         This workshop bridges theory and practice to
         tackle these challenges, bringing together researchers working on distribution shift, adversarial robustness,
-        and strategic behaviour to chart principled yet deployable solutions for <em>Reliable ML from Unreliable Data</em>.
+        and strategic behaviour to chart principled yet deployable solutions for <em>Reliable ML from Unreliable Data</em>.
     </p>
     <br>
     <div class="banner-wrapper">
@@ -199,9 +210,22 @@
    <!-- CALL FOR PAPERS -->
   <section class="py-5" id="call">
     <div class="container lead">
-      <h2 class="text-center mb-4">Call for Papers</h2>
+      <h2 class="text-center mb-4">Call for Papers</h2>
+
+      <!-- TOGGLE BUTTON ADDED -->
+      <p class="text-center">
+        <button id="call-toggle-btn"
+		class="btn btn-outline-secondary btn-sm" type="button"
+                data-toggle="collapse" data-target="#call-content"
+                aria-expanded="false" aria-controls="call-content">
+          Show Call for Papers
+        </button>
+      </p>
+
+      <!-- COLLAPSIBLE CONTENT (DEFAULT: COLLAPSED) -->
+      <div class="collapse" id="call-content">
       <p>We invite work that advances theory, empirical understanding, or systems design for <strong>robust and reliable machine
-         learning under imperfect data</strong> – including, but not limited to, the following topics:
+         learning under imperfect data</strong> – including, but not limited to, the following topics:
          <ul>
           <li>Distribution shift and transfer learning</li>
           <li>Adversarial robustness and defenses</li>
@@ -213,13 +237,13 @@
          </ul>
          Submissions may report new results, negative findings, benchmarks, or visionary perspectives.</p>
       <ul>
-        <li><strong>Long track:</strong> up to <strong>9 pages</strong> (excluding references).</li>
-        <li><strong>Short track:</strong> up to <strong>4 pages</strong> (excluding references).</li>
-        <li><strong>Formatting:</strong> use the official <a href="https://media.neurips.cc/Conferences/NeurIPS2025/Styles.zip">NeurIPS 2025 style files</a>
+        <li><strong>Long track:</strong> up to <strong>9 pages</strong> (excluding references).</li>
+        <li><strong>Short track:</strong> up to <strong>4 pages</strong> (excluding references).</li>
+        <li><strong>Formatting:</strong> use the official <a href="https://media.neurips.cc/Conferences/NeurIPS2025/Styles.zip">NeurIPS 2025 style files</a>
             and submit a <u>single PDF</u> (which should be anonymized, like NeurIPS submissions; see <a href="https://neurips.cc/Conferences/2025/CallForPapers">these instructions</a> on anonymization).</li>
-        <li><strong>Appendix:</strong> include any supplementary material in the same PDF — <em>no page limit</em> for the appendix.</li>
+        <li><strong>Appendix:</strong> include any supplementary material in the same PDF — <em>no page limit</em> for the appendix.</li>
       </ul>
-      <h3 class="mt-4">Important Dates</h3>
+      <h3 class="mt-4">Important Dates</h3>
       <ul>
         <li><strong>Submission deadline:</strong> <ins datetime="2025-08-29"><time datetime="2025-08-29"><strong>Fri Aug 29 2025 (AoE)</strong></time></ins>
           &nbsp;&nbsp;&nbsp;
@@ -227,28 +251,128 @@
     <time datetime="2025-08-22">Fri Aug 22 2025 (AoE)</time>
     <span class="sr-only"> — previous deadline</span>
   </del>
-        <li><strong>Notification of decisions:</strong> Mon Sep 22 2025 (AoE)</li>
-        <li><strong>Workshop:</strong> Sat Dec 6, 2025 (at NeurIPS 2025)</li>
+        <li><strong>Notification of decisions:</strong> Mon Sep 22 2025 (AoE)</li>
+        <li><strong>Workshop:</strong> Sat Dec 6, 2025 (at NeurIPS 2025)</li>
 		<li><strong>Submission link:</strong> <a href="https://openreview.net/group?id=NeurIPS.cc/2025/Workshop/Reliable_ML">OpenReview</a></li>
+    <li><strong>Accepted papers:</strong> <a href="https://openreview.net/group?id=NeurIPS.cc/2025/Workshop/Reliable_ML#tab-accept">OpenReview accepted papers list</a></li>
       </ul>
-      <p class="mb-0">The workshop is <strong>non‑archival</strong>; authors are free to publish
+      <p class="mb-0">The workshop is <strong>non-archival</strong>; authors are free to publish
          revised versions elsewhere. Every submission will receive at least two reviews from our program committee, and
          accepted papers will be presented as talks or posters.</p>
+      </div> <!-- /#call-content -->
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="py-5" id="schedule">
+    <div class="container">
+      <h2 class="text-center mb-4">Schedule (Sat Dec 6, 2025)</h2>
+      <p class="text-center mb-3">
+        All times are local San Diego time (PST).
+      </p>
+      <div class="table-responsive">
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th scope="col">Start</th>
+              <th scope="col">End</th>
+              <th scope="col">Agenda</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:00 AM</td>
+              <td>8:30 AM</td>
+              <td>Invited talk by <a href="https://www.chrisharshaw.com/">Chris Harshaw</a> <br>Title: The Conflict Graph Design: Estimating Causal Effects Under Network Interference </td>
+            </tr>
+            <tr>
+              <td>8:30 AM</td>
+              <td>9:00 AM</td>
+              <td>Invited talk by <a href="https://www.surbhigoel.com/">Surbhi Goel</a></td>
+            </tr>
+            <tr>
+              <td>9:00 AM</td>
+              <td>9:30 AM</td>
+              <td>Coffee Break</td>
+            </tr>
+            <tr>
+              <td>9:30 AM</td>
+              <td>10:00 AM</td>
+              <td>Invited talk by <a href="https://www.columbia.edu/~skk2175/">Samory Kpotufe</a></td>
+            </tr>
+            <tr>
+              <td>10:00 AM</td>
+              <td>10:30 AM</td>
+              <td>Best-paper Talks</td>
+            </tr>
+            <tr>
+              <td>10:30 AM</td>
+              <td>11:00 AM</td>
+              <td>Invited talk by <a href="https://iid.yale.edu/">Amin Karbasi</a></td>
+            </tr>
+            <tr>
+              <td>11:00 AM</td>
+              <td>12:00 PM</td>
+              <td>Poster Session 1</td>
+            </tr>
+            <tr>
+              <td>12:00 PM</td>
+              <td>1:15 PM</td>
+              <td>Lunch</td>
+            </tr>
+            <tr>
+              <td>1:30 PM</td>
+              <td>2:15 PM</td>
+              <td>Poster Session 2</td>
+            </tr>
+            <tr>
+              <td>2:15 PM</td>
+              <td>3:00 PM</td>
+              <td>
+                Panel with
+                <a href="https://beirami.github.io/">Ahmad Beirami</a>,
+                <a href="https://parikg.github.io/">Parikshit Gopalan</a>,
+                <a href="https://thashim.github.io/">Tatsunori Hashimoto</a>, and
+                <a href="https://www.charapodimata.com/">Chara Podimata</a>
+              </td>
+            </tr>
+            <tr>
+              <td>3:00 PM</td>
+              <td>3:30 PM</td>
+              <td>Coffee Break</td>
+            </tr>
+            <tr>
+              <td>3:30 PM</td>
+              <td>4:00 PM</td>
+              <td>Invited talk by <a href="https://stevehanneke.com/">Steve Hanneke</a></td>
+            </tr>
+            <tr>
+              <td>4:00 PM</td>
+              <td>5:00 PM</td>
+              <td>Poster Session 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-3">
+        Poster titles and poster-session assignments are available on the
+        <a href="https://neurips.cc/virtual/2025/loc/san-diego/workshop/109580">NeurIPS virtual workshop page</a>.
+      </p>
     </div>
   </section>
 
   <!-- SPEAKERS -->
   <section class="py-5 bg-light" id="speakers">
     <div class="container">
-      <h2 class="text-center mb-4">Invited Speakers</h2>
+      <h2 class="text-center mb-4">Invited Speakers</h2>
       <div class="flex-row-wrap">
         <div class="card speaker-card">
 	<a href="https://www.surbhigoel.com/" class="clickable-image">
           <img src="./speakers/surbhi.jpg" alt="Surbhi Goel" class="speaker-img">
 </a>
           <div class="card-body">
-            <span class="speaker-name">Surbhi Goel</span>
-            <small>University of Pennsylvania</small>
+            <span class="speaker-name">Surbhi Goel</span>
+            <small>University of Pennsylvania</small>
           </div>
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -257,8 +381,8 @@
           <img src="./speakers/steve.jpeg" alt="Steve Hanneke" class="speaker-img">
 </a>
           <div class="card-body">
-            <span class="speaker-name">Steve Hanneke</span>
-            <small>Purdue University</small>
+            <span class="speaker-name">Steve Hanneke</span>
+            <small>Purdue University</small>
           </div>
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -267,8 +391,8 @@
           <img src="./speakers/chris.jpg" alt="Chris Harshaw" class="speaker-img">
 </a>
           <div class="card-body">
-            <span class="speaker-name">Chris Harshaw</span>
-            <small>Columbia University</small>
+            <span class="speaker-name">Chris Harshaw</span>
+            <small>Columbia University</small>
           </div>
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -277,8 +401,8 @@
           <img src="./speakers/amin.jpg" alt="Amin Karbasi" class="speaker-img">
 	</a>
           <div class="card-body">
-            <span class="speaker-name">Amin Karbasi</span>
-            <small>Cisco &amp; Yale University</small>
+            <span class="speaker-name">Amin Karbasi</span>
+            <small>Cisco &amp; Yale University</small>
           </div>
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -287,8 +411,8 @@
           <img src="./speakers/samory.webp" alt="Samory Kpotufe" class="speaker-img">
 </a>
           <div class="card-body">
-            <span class="speaker-name">Samory Kpotufe</span>
-            <small>Columbia University</small>
+            <span class="speaker-name">Samory Kpotufe</span>
+            <small>Columbia University</small>
           </div>
         </div>
       </div>
@@ -298,7 +422,7 @@
   <!-- PANELISTS -->
   <section class="py-5 bg-light" id="speakers">
     <div class="container">
-      <h2 class="text-center mb-4">Invited Panelists</h2>
+      <h2 class="text-center mb-4">Invited Panelists</h2>
       <div class="flex-row-wrap">
         <div class="card speaker-card">
 	<a href="https://beirami.github.io/" class="clickable-image">
@@ -353,8 +477,8 @@
           <img src="./organizers/andrew.jpg" alt="Andrew Ilyas" class="organizer-img">
 </a>
           <div class="card-body">
-            <span class="organizer-name">Andrew Ilyas</span>
-            <small>Stanford / CMU</small>
+            <span class="organizer-name">Andrew Ilyas</span>
+            <small>Stanford / CMU</small>
           </div>
         </div>
         <div class="card organizer-card">
@@ -362,8 +486,8 @@
           <img src="./organizers/alkis.png" alt="Alkis Kalavasis" class="organizer-img">
 </a>
           <div class="card-body">
-            <span class="organizer-name">Alkis Kalavasis</span>
-            <small>Yale University</small>
+            <span class="organizer-name">Alkis Kalavasis</span>
+            <small>Yale University</small>
           </div>
         </div>
         <div class="card organizer-card">
@@ -371,8 +495,8 @@
           <img src="./organizers/anay.jpg" alt="Anay Mehrotra" class="organizer-img">
 </a>
           <div class="card-body">
-            <span class="organizer-name">Anay Mehrotra</span>
-            <small>Yale University</small>
+            <span class="organizer-name">Anay Mehrotra</span>
+            <small>Yale University</small>
           </div>
         </div>
         <div class="card organizer-card">
@@ -381,7 +505,7 @@
 </a>
           <div class="card-body">
             <span class="organizer-name">Manolis Zampetakis</span>
-            <small>Yale University</small>
+            <small>Yale University</small>
           </div>
         </div>
       </div><!-- /.flex-row-wrap -->
@@ -515,8 +639,26 @@
  
    <center>
     <p>
-    <em>Last updated November 19, 2025 by Anay Mehrotra</em>
+    <em>Last updated November 29, 2025 by Anay Mehrotra</em>
    </p>
    </center>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var $callContent = $('#call-content');
+    var $btn = $('#call-toggle-btn');
+
+    if ($callContent.length && $btn.length) {
+      $callContent.on('show.bs.collapse', function () {
+        $btn.text('Hide Call for Papers');
+      });
+      $callContent.on('hide.bs.collapse', function () {
+        $btn.text('Show Call for Papers');
+      });
+    }
+  });
+</script>
+
 </body>
 </html>
+
