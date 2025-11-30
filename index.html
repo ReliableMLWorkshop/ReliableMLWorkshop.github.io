@@ -148,6 +148,57 @@
     margin-bottom: 2rem;
   }
 
+  /* Best papers styling */
+  .best-papers-featured {
+    background: #fffdf6;
+    border: 1px solid #e4dcc7;
+    border-radius: 0.6rem;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    margin-bottom: 1.75rem;
+  }
+
+  .best-papers-grid .card {
+    background: #fffdf6;
+    border: 1px solid #e4dcc7;
+    border-radius: 0.6rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+
+  .paper-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.35rem;
+  }
+
+  .paper-badge-icon {
+    margin-right: 0.4rem;
+    font-size: 1.1rem;
+  }
+
+  .best-paper-label {
+    font-weight: 700;
+  }
+
+  .runnerup-label {
+    font-weight: 600;
+  }
+
+  .paper-title {
+    font-weight: 600;
+    font-size: 1.02rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .paper-authors {
+    margin-bottom: 0;
+    font-size: 0.96rem;
+  }
+
+
   </style>
 </head>
 <body>
@@ -207,64 +258,8 @@
     </div>
   </section>
 
-   <!-- CALL FOR PAPERS -->
-  <section class="py-5" id="call">
-    <div class="container lead">
-      <h2 class="text-center mb-4">Call for Papers</h2>
-
-      <!-- TOGGLE BUTTON ADDED -->
-      <p class="text-center">
-        <button id="call-toggle-btn"
-		class="btn btn-outline-secondary btn-sm" type="button"
-                data-toggle="collapse" data-target="#call-content"
-                aria-expanded="false" aria-controls="call-content">
-          Show Call for Papers
-        </button>
-      </p>
-
-      <!-- COLLAPSIBLE CONTENT (DEFAULT: COLLAPSED) -->
-      <div class="collapse" id="call-content">
-      <p>We invite work that advances theory, empirical understanding, or systems design for <strong>robust and reliable machine
-         learning under imperfect data</strong> – including, but not limited to, the following topics:
-         <ul>
-          <li>Distribution shift and transfer learning</li>
-          <li>Adversarial robustness and defenses</li>
-          <li>Strategic behavior in socio-technical systems</li>
-          <li>Learning with missing or biased data; and truncated statistics</li>
-          <li>Causal inference beyond overlap, with confounders, or with errors</li>
-          <li>LLM safety and alignment</li>
-          <li>Robustness in interactive environments</li>
-         </ul>
-         Submissions may report new results, negative findings, benchmarks, or visionary perspectives.</p>
-      <ul>
-        <li><strong>Long track:</strong> up to <strong>9 pages</strong> (excluding references).</li>
-        <li><strong>Short track:</strong> up to <strong>4 pages</strong> (excluding references).</li>
-        <li><strong>Formatting:</strong> use the official <a href="https://media.neurips.cc/Conferences/NeurIPS2025/Styles.zip">NeurIPS 2025 style files</a>
-            and submit a <u>single PDF</u> (which should be anonymized, like NeurIPS submissions; see <a href="https://neurips.cc/Conferences/2025/CallForPapers">these instructions</a> on anonymization).</li>
-        <li><strong>Appendix:</strong> include any supplementary material in the same PDF — <em>no page limit</em> for the appendix.</li>
-      </ul>
-      <h3 class="mt-4">Important Dates</h3>
-      <ul>
-        <li><strong>Submission deadline:</strong> <ins datetime="2025-08-29"><time datetime="2025-08-29"><strong>Fri Aug 29 2025 (AoE)</strong></time></ins>
-          &nbsp;&nbsp;&nbsp;
-          <del datetime="2025-08-22">
-    <time datetime="2025-08-22">Fri Aug 22 2025 (AoE)</time>
-    <span class="sr-only"> — previous deadline</span>
-  </del>
-        <li><strong>Notification of decisions:</strong> Mon Sep 22 2025 (AoE)</li>
-        <li><strong>Workshop:</strong> Sat Dec 6, 2025 (at NeurIPS 2025)</li>
-		<li><strong>Submission link:</strong> <a href="https://openreview.net/group?id=NeurIPS.cc/2025/Workshop/Reliable_ML">OpenReview</a></li>
-    <li><strong>Accepted papers:</strong> <a href="https://openreview.net/group?id=NeurIPS.cc/2025/Workshop/Reliable_ML#tab-accept">OpenReview accepted papers list</a></li>
-      </ul>
-      <p class="mb-0">The workshop is <strong>non-archival</strong>; authors are free to publish
-         revised versions elsewhere. Every submission will receive at least two reviews from our program committee, and
-         accepted papers will be presented as talks or posters.</p>
-      </div> <!-- /#call-content -->
-    </div>
-  </section>
-
-  <!-- SCHEDULE -->
-  <section class="py-5" id="schedule">
+     <!-- SCHEDULE -->
+  <section class="py-5 bg-light" id="schedule">
     <div class="container">
       <h2 class="text-center mb-4">Schedule (Sat Dec 6, 2025)</h2>
       <p class="text-center mb-3">
@@ -362,7 +357,7 @@
   </section>
 
   <!-- SPEAKERS -->
-  <section class="py-5 bg-light" id="speakers">
+  <section class="py-5" id="speakers">
     <div class="container">
       <h2 class="text-center mb-4">Invited Speakers</h2>
       <div class="flex-row-wrap">
@@ -466,6 +461,151 @@
       </div>
     </div>
   </section>
+
+  <!-- BEST PAPERS-->
+  <!-- BEST PAPERS-->
+  <section class="py-5" id="best-papers">
+    <div class="container">
+      <h2 class="text-center mb-4">Best Papers</h2>
+
+      <!-- Featured best paper -->
+      <div class="best-papers-featured">
+        <div class="paper-badge best-paper-label">
+          <span class="paper-badge-icon" aria-hidden="true">🏆</span>
+          <span class="sr-only">Best paper</span>
+          Best Paper
+        </div>
+        <div>
+          <p class="paper-title mb-1">
+            <a href="https://openreview.net/pdf?id=EohsHF5amz"
+               target="_blank" rel="noopener noreferrer">
+              Testing Noise Assumptions of Learning Algorithms
+            </a>
+          </p>
+          <p class="paper-authors">
+            Surbhi Goel, Adam Klivans, Konstantinos Stavropoulos, and Arsen Vasilyan
+          </p>
+        </div>
+      </div>
+
+      <!-- Runner-up papers -->
+      <div class="row best-papers-grid">
+        <div class="col-md-6 mb-3">
+          <div class="card h-100">
+            <div class="card-body text-left">
+              <div class="paper-badge runnerup-label">
+                <span class="paper-badge-icon" aria-hidden="true">🥈</span>
+                <span class="sr-only">Runner-up best paper</span>
+                Runner-up Best Paper
+              </div>
+              <p class="paper-title mb-1">
+                <a href="https://openreview.net/pdf?id=8CgVXmVa71"
+                   target="_blank" rel="noopener noreferrer">
+                  Why is Your Language Model a Poor Implicit Reward Model?
+                </a>
+              </p>
+              <p class="paper-authors">
+                Noam Razin, Yong Lin, Jiarui Yao, and Sanjeev Arora
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card h-100">
+            <div class="card-body text-left">
+              <div class="paper-badge runnerup-label">
+                <span class="paper-badge-icon" aria-hidden="true">🥈</span>
+                <span class="sr-only">Runner-up best paper</span>
+                Runner-up Best Paper
+              </div>
+              <p class="paper-title mb-1">
+                <a href="https://openreview.net/pdf?id=XrB0bnPJxI"
+                   target="_blank" rel="noopener noreferrer">
+                  Watch the Weights: Unsupervised monitoring and control of fine-tuned LLMs
+                </a>
+              </p>
+              <p class="paper-authors">
+                Ziqian Zhong and Aditi Raghunathan
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sponsor -->
+      <div class="text-center mt-4">
+        <p class="mb-2">
+          <em>Cash prizes for the best paper awards are generously sponsored by
+          <a href="https://www.intelligible.ai/" target="_blank" rel="noopener noreferrer">
+            Intelligible</a></em>
+        </p>
+        <a href="https://www.intelligible.ai/" target="_blank" rel="noopener noreferrer">
+          <img src="./intelligible_teal_clear.png"
+               alt="Intelligible logo"
+               style="max-height:60px; width:auto;">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- CALL FOR PAPERS -->
+  <section class="py-5 bg-light" id="call">
+    <div class="container lead">
+      <h2 class="text-center mb-4">Call for Papers</h2>
+
+      <!-- TOGGLE BUTTON ADDED -->
+      <p class="text-center">
+        <button id="call-toggle-btn"
+		class="btn btn-outline-secondary btn-sm" type="button"
+                data-toggle="collapse" data-target="#call-content"
+                aria-expanded="false" aria-controls="call-content">
+          Show Call for Papers
+        </button>
+      </p>
+
+      <!-- COLLAPSIBLE CONTENT (DEFAULT: COLLAPSED) -->
+      <div class="collapse" id="call-content">
+      <p>We invite work that advances theory, empirical understanding, or systems design for <strong>robust and reliable machine
+         learning under imperfect data</strong> – including, but not limited to, the following topics:
+         <ul>
+          <li>Distribution shift and transfer learning</li>
+          <li>Adversarial robustness and defenses</li>
+          <li>Strategic behavior in socio-technical systems</li>
+          <li>Learning with missing or biased data; and truncated statistics</li>
+          <li>Causal inference beyond overlap, with confounders, or with errors</li>
+          <li>LLM safety and alignment</li>
+          <li>Robustness in interactive environments</li>
+         </ul>
+         Submissions may report new results, negative findings, benchmarks, or visionary perspectives.</p>
+      <ul>
+        <li><strong>Long track:</strong> up to <strong>9 pages</strong> (excluding references).</li>
+        <li><strong>Short track:</strong> up to <strong>4 pages</strong> (excluding references).</li>
+        <li><strong>Formatting:</strong> use the official <a href="https://media.neurips.cc/Conferences/NeurIPS2025/Styles.zip">NeurIPS 2025 style files</a>
+            and submit a <u>single PDF</u> (which should be anonymized, like NeurIPS submissions; see <a href="https://neurips.cc/Conferences/2025/CallForPapers">these instructions</a> on anonymization).</li>
+        <li><strong>Appendix:</strong> include any supplementary material in the same PDF — <em>no page limit</em> for the appendix.</li>
+      </ul>
+      <h3 class="mt-4">Important Dates</h3>
+      <ul>
+        <li><strong>Submission deadline:</strong> <ins datetime="2025-08-29"><time datetime="2025-08-29"><strong>Fri Aug 29 2025 (AoE)</strong></time></ins>
+          &nbsp;&nbsp;&nbsp;
+          <del datetime="2025-08-22">
+    <time datetime="2025-08-22">Fri Aug 22 2025 (AoE)</time>
+    <span class="sr-only"> — previous deadline</span>
+  </del>
+        <li><strong>Notification of decisions:</strong> Mon Sep 22 2025 (AoE)</li>
+        <li><strong>Workshop:</strong> Sat Dec 6, 2025 (at NeurIPS 2025)</li>
+		<li><strong>Submission link:</strong> <a href="https://openreview.net/group?id=NeurIPS.cc/2025/Workshop/Reliable_ML">OpenReview</a></li>
+    <li><strong>Accepted papers:</strong> <a href="https://openreview.net/group?id=NeurIPS.cc/2025/Workshop/Reliable_ML#tab-accept">OpenReview accepted papers list</a></li>
+      </ul>
+      <p class="mb-0">The workshop is <strong>non-archival</strong>; authors are free to publish
+         revised versions elsewhere. Every submission will receive at least two reviews from our program committee, and
+         accepted papers will be presented as talks or posters.</p>
+      </div> <!-- /#call-content -->
+    </div>
+  </section>
+
 
   <!-- ORGANISERS -->
   <section class="py-5" id="organizers">
